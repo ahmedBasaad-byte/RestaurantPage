@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(./pizza.png) center / cover no-repeat fixed;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+header, footer {
+    background-color: #ba0101;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+}
+
+nav {
+    background-color: #ba0101;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+nav button {
+    background-color: #ba0101;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+
+nav button:hover {
+    background-color: #272222;
+    color: #ba0101;
+}
+
+nav button.active {
+    background-color: #4f0101;
+    color: #ba0101;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
+    padding: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.home {
+    min-width: 450px;
+    max-width: 600px;
+    min-height: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: all 1s ease-in-out;
+
+}
+.home, .menu, .Contact {
+    animation: fadeIn 0.3s ease;
+}
+
+.menu{
+    min-width: 450px;
+    max-width: 800px;
+    min-height: 400px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    transition: transform 1s ease-in-out;
+}
+
+.Contact{
+    min-width: 450px;
+    max-width: 800px;
+    min-height: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    white-space: pre-line;
+    transition: all 1s ease-in-out;
+}
+paragraph{
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 8px rgba(255, 0, 0, 0.676);
+}
+
+li { 
+    white-space: pre-line;
+    margin-bottom: 10px;
+}
+
+   
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
